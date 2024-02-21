@@ -43,7 +43,7 @@ const ChangePasswordTab = memo(function () {
         setError('');
 
         if (newPassword.length < consts.adminPasswordMinLength || newPassword.length > consts.adminPasswordMaxLength) {
-            setError(`The password must be between ${consts.adminPasswordMinLength} and ${consts.adminPasswordMaxLength} digits long.`);
+            setError(`The password must be between ${consts.adminPasswordMinLength} and ${consts.adminPasswordMaxLength} characters long.`);
             return;
         } else if (newPassword !== newPasswordConfirm) {
             setError('The passwords do not match.');
